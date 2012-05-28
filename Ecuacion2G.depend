@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1338220756 source:c:\users\andy737\desktop\ecuacion2g\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<conio.h>
+
+1338220490 source:c:\users\andy737\dropbox\escuela-uttec\ingenieria economica\ecuacion2g\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<conio.h>
+
