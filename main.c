@@ -115,7 +115,7 @@ void ingresaV(void)
 
         tmp=error(tmp);//Llamada a la función validar entrada
         system("cls");//Limpia la pantalla de consola
-        printf("\nIngresa el valor(máximo 5 dígitos #.### o #####) de la variable a:\n");
+        printf("\nIngresa el valor(máximo 5 dígitos #.###,#####,-#.## o -####) de la variable a:\n");
         fflush (stdin);//Limpia el buffer de entrada
         gets(a1);//Recibe la entrada del teclado y al almacena en el array
         val=validaFE(a1);//Llama a la funcion validar numeros
@@ -235,7 +235,7 @@ void solucionE(float a, float b, float c)
 int main()
 {
     //Declaración de variables locales
-    char op;
+    int op;
     //Despliega el menú de la aplicación
     do
     {
@@ -246,17 +246,17 @@ int main()
         printf("\t2 Salir.\n");
         printf("\nIngresa la opción: ");
         fflush (stdin);//Limpia el buffer de entrada
-        scanf("%c",&op);//Recibe la entrada del teclado
+        scanf("%i",&op);//Recibe la entrada del teclado
         //Permite seleccionar alguna de las opciones del menú
         switch(op)
         {
             //Opción "Resolver ecuación de 2do grado"
-        case '1':
+        case 1:
             system("cls");
             ingresaV();
             getch();//Espera hasta que se pulse una tecla
             break;
-        case '2':
+        case 2:
             system("cls");
             //Finaliza la ejecución de la aplicación
             return(0);
@@ -268,7 +268,7 @@ int main()
             break;
         }
     }
-    while(op!='2'); //Mientras la opcion seleccionado sea diferente de 2 el menú se vuelve a desplegar en pantalla
+    while(op!=2); //Mientras la opcion seleccionado sea diferente de 2 el menú se vuelve a desplegar en pantalla
     system("cls");
     //Finaliza la ejecución de la aplicación
     return(0);
